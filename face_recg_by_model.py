@@ -8,7 +8,7 @@ from lib import ismale, init_model
 
 p = Pinyin()
 
-video_capture = cv2.VideoCapture(2)
+video_capture = cv2.VideoCapture(0)
 
 face_db = json.load(open(bulid_db.SAVE_PATH))
 face_encoding_list = [np.array(face['feature']) for face in face_db['face']]

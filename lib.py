@@ -1,8 +1,11 @@
 import tflearn
 import json
 import numpy as np
+from os import path
 
-SAVE_PATH = "G:\\T_T\\exe\\facereg\\know_face.json"
+D = path.__file__
+
+SAVE_PATH = path.join(D, "know_face.json")
 
 def init_model():
     net = tflearn.input_data(shape=[None, 128])
