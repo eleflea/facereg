@@ -7,7 +7,7 @@ from lib import ismale
 
 class VideoCamera(object):
     def __init__(self, data):
-        self.video = cv2.VideoCapture(2)
+        self.video = cv2.VideoCapture(0)
         self.gender_model, self.face_encoding_list, self.face_name_list = data
         self.face_locations = []
         self.face_encodings = []

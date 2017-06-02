@@ -16,7 +16,7 @@ def init_model():
     net = tflearn.regression(net, optimizer='adam', learning_rate=0.001,
                              metric=None)
     model = tflearn.DNN(net, tensorboard_verbose=0)
-    model.load("G:\\T_T\\exe\\facereg\\model\\gender4.model")
+    model.load(path.join(D, "model", "gender4.model"))
     return model
 
 def ismale(model, encoding):
