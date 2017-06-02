@@ -3,7 +3,7 @@ import json
 import numpy as np
 from os import path
 
-D = path.__file__
+D = path.dirname(__file__)
 
 SAVE_PATH = path.join(D, "know_face.json")
 

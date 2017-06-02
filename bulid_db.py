@@ -3,7 +3,7 @@ import os
 
 import face_recognition as frec
 
-D = path.__file__
+D = os.path.dirname(__file__)
 
 PATH = "G:\\T_T\\sth\\face\\know_face"
 SAVE_PATH = os.path.join(D, "know_face.json")
